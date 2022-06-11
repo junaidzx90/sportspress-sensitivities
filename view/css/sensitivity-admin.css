@@ -1,0 +1,66 @@
+#sensitivities{
+    display: flex;
+    margin-top: 20px;
+    gap: 50px;
+    margin-bottom: 30px;
+}
+#sensitivities .sensitivity{
+    border: 1px solid #d7d7d7;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    flex: .3;
+    height: fit-content;
+}
+#sensitivities .sensitivity button{
+    width: fit-content;
+    margin-top: 20px;
+}
+#sensitivities .sensitivity h4{
+    padding: 10px;
+    margin: 0;
+    border-bottom: 1px solid #d7d7d7;
+}
+#sensitivities .sensitivity .sensitivity__contents{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.sc_input {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 10px;
+}
+.sc_input .remove_cs_field{
+    position: absolute;
+    right: 3px;
+    top: 4px;
+    font-size: 28px;
+    transform: rotate(45deg);
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+}
+.sc_input input{
+    width: 92%;
+}
+.ftitle{
+    border-bottom: 1px solid #d7d7d7;
+    padding-bottom: 5px;
+    margin: 0;
+}
+@media screen and (max-width: 768px) {
+    #sensitivities{
+        flex-direction: column;
+        padding-right: 32px;
+        gap: 10px;
+    }
+    #sensitivities .sensitivity{
+        flex: 1;
+    }    
+}

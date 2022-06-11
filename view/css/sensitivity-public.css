@@ -1,0 +1,262 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+ @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+div#sensitivity__form form {
+    padding: 10px;
+}
+div#sensitivity__form form .sensitivity {
+    width: 100%;
+    margin-bottom: 50px;
+    border: 1px solid #3c3c3c;
+}
+div#sensitivity__form form .sensitivity p{
+    margin: 0;
+    margin-bottom: 20px;
+    color: #fff;
+}
+div#sensitivity__form form .sensitivity p.notfound_error {
+  padding: 20px;
+  margin: 0;
+}
+#sensitivity__form > form > div > p {
+    padding: 10px 20px;
+    margin: 0 !important;
+    font-weight: bold;
+    font-size: 20px;
+    border-bottom: 1px solid #3c3c3c;
+}
+
+.sensitivity__contents {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.sc_field {
+    background: #ed1c240d;
+    border-radius: 3px;
+    padding: 20px;
+}
+
+
+.sc_range {
+    display: flex;
+    align-items: center;
+    font: 1em/1 arial, sans-serif;
+}
+input.sc_slider {
+  outline: none;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  font: 1em/1 arial, sans-serif;
+}
+input.sc_slider, input.sc_slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+input.sc_slider::-webkit-slider-runnable-track {
+  box-sizing: border-box;
+  border: none;
+  width: 12.5em;
+  height: 0.2em;
+  background: #ed1c24;
+}
+.sc_js input.sc_slider::-webkit-slider-runnable-track {
+  background: linear-gradient(#eee, #eee) 0/var(--sx) 100% no-repeat #ed1c24;
+}
+
+input.sc_slider::-moz-range-track {
+  box-sizing: border-box;
+  border: none;
+  width: 12.5em;
+  height: 0.2em;
+  background: rgb(90, 67, 67);
+}
+input.sc_slider::-ms-track {
+  box-sizing: border-box;
+  border: none;
+  width: 12.5em;
+  height: 0.2em;
+  background: #ed1c24;
+}
+input.sc_slider::-moz-range-progress {
+  height: 0.2em;
+  background: #eee;
+}
+input.sc_slider::-ms-fill-lower {
+  height: 0.2em;
+  background: #eee;
+}
+input.sc_slider::-webkit-slider-thumb {
+  margin-top: -0.65em;
+  box-sizing: border-box;
+  border: none;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50% 50% 50% 0%;
+  border: 6px solid #f1b23b;
+  transform: rotate(-45deg);
+  background: #ed1c24;
+  cursor: pointer;
+}
+input.sc_slider::-webkit-slider-thumb:hover {
+  border: 3px solid #f1b23b;
+}
+input.sc_slider::-moz-range-thumb {
+  box-sizing: border-box;
+  border: none;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50% 50% 50% 0%;
+  border: 6px solid #f1b23b;
+  transform: rotate(-45deg);
+  background: #ed1c24;
+  cursor: pointer;
+}
+input.sc_slider::-moz-range-thumb:hover {
+  border: 3px solid #f1b23b;
+}
+input.sc_slider::-ms-thumb {
+  margin-top: 0;
+  box-sizing: border-box;
+  border: none;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50% 50% 50% 0%;
+  border: 6px solid #f1b23b;
+  transform: rotate(-45deg);
+  background: #ed1c24;
+  cursor: pointer;
+}
+input.sc_slider::-ms-thumb:hover {
+  border: 3px solid #f1b23b;
+}
+.sc_range output {
+    width: 50px;
+    color: #fff;
+}
+
+
+/* View */
+.sensitivity_wrapper *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.sensitivity_wrapper{
+  width: 100%;
+  font-size: 18px;
+  padding: 20px;
+  /* background-image: linear-gradient(96deg, #804331, #A83437); */
+}
+
+.sensitivity_wrapper > .sensitivity_cards_container{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.sensitivity_wrapper > .sensitivity_cards_container > .sensitivity_camera_sensitivity,
+.sensitivity_wrapper > .sensitivity_cards_container > .sensitivity_camera,
+.sensitivity_wrapper > .sensitivity_cards_container > .sensitivity_ads_sensitivity{
+  width: 400px;
+  height: fit-content;
+}
+
+.sensitivity_wrapper > .sensitivity_cards_container > .sensitivity_camera_sensitivity h4,
+.sensitivity_wrapper > .sensitivity_cards_container > .sensitivity_camera h4,
+.sensitivity_wrapper > .sensitivity_cards_container > .sensitivity_ads_sensitivity h4{
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 15px;
+  padding: 10px 0;
+}
+.sensitivity_wrapper > .sensitivity_cards_container > .sensitivity_camera_sensitivity,
+.sensitivity_wrapper > .sensitivity_cards_container > .sensitivity_camera,
+.sensitivity_wrapper > .sensitivity_cards_container > .sensitivity_ads_sensitivity{
+  flex: .3;
+  border: 0.1px solid #ffffff47;
+  padding-bottom: 5px;
+}
+.sensitivity_wrapper > .sensitivity_cards_container > .sensitivity_camera_sensitivity{
+  background-color: rgba(255,229,0,0.08);
+}
+.sensitivity_wrapper > .sensitivity_cards_container > .sensitivity_camera{
+  background-color: rgba(2,122,242,0.06);
+}
+.sensitivity_wrapper > .sensitivity_cards_container > .sensitivity_ads_sensitivity{
+  background-color: rgba(40,186,53,0.13);
+}
+.sensitivity_wrapper > .sensitivity_cards_container > .sensitivity_camera_sensitivity > .sensitivity_rows_container,
+.sensitivity_wrapper > .sensitivity_cards_container > .sensitivity_camera > .sensitivity_rows_container,
+.sensitivity_wrapper > .sensitivity_cards_container > .sensitivity_ads_sensitivity > .sensitivity_rows_container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.sensitivity_wrapper > .sensitivity_cards_container > .sensitivity_camera_sensitivity > .sensitivity_rows_container > .sensitivity_card,
+.sensitivity_wrapper > .sensitivity_cards_container > .sensitivity_camera > .sensitivity_rows_container > .sensitivity_card,
+.sensitivity_wrapper > .sensitivity_cards_container > .sensitivity_ads_sensitivity > .sensitivity_rows_container > .sensitivity_card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e67e17;
+  padding: 10px;
+  width: calc(50% - 10px);
+}
+#content > div > div > div > div.sensitivity_camera_sensitivity > .sensitivity_rows_container > .sensitivity_card {
+  width: calc(100% - 10px);
+}
+.sensitivity_wrapper > .sensitivity_cards_container > .sensitivity_camera > .sensitivity_rows_container > .sensitivity_card{
+  border-color: #03a9f4;
+}
+.sensitivity_wrapper > .sensitivity_cards_container > .sensitivity_ads_sensitivity > .sensitivity_rows_container > .sensitivity_card{
+  border-color: #6fd5ff;
+}
+.sensitivity_wrapper > .sensitivity_cards_container > .sensitivity_camera_sensitivity > .sensitivity_rows_container > .sensitivity_card i,
+.sensitivity_wrapper > .sensitivity_cards_container > .sensitivity_camera > .sensitivity_rows_container > .sensitivity_card i,
+.sensitivity_wrapper > .sensitivity_cards_container > .sensitivity_ads_sensitivity > .sensitivity_rows_container > .sensitivity_card i{
+  font-size: 16px;
+  color: #fff;
+}
+.sensitivity_wrapper > .sensitivity_cards_container > .sensitivity_camera_sensitivity > .sensitivity_rows_container > .sensitivity_card h2,
+.sensitivity_wrapper > .sensitivity_cards_container > .sensitivity_camera > .sensitivity_rows_container > .sensitivity_card h2,
+.sensitivity_wrapper > .sensitivity_cards_container > .sensitivity_ads_sensitivity > .sensitivity_rows_container > .sensitivity_card h2{
+  font-size: 28px;
+  font-weight: 500;
+  color: #fff;
+}
+.sensitivity_wrapper > .sensitivity_cards_container > .sensitivity_camera_sensitivity > .sensitivity_rows_container > .sensitivity_card p,
+.sensitivity_wrapper > .sensitivity_cards_container > .sensitivity_camera > .sensitivity_rows_container > .sensitivity_card p,
+.sensitivity_wrapper > .sensitivity_cards_container > .sensitivity_ads_sensitivity > .sensitivity_rows_container > .sensitivity_card p{
+  font-size: 12px;
+  color: #bcbcbcbc;
+  font-weight: 200;
+  line-height: 1.5em;
+  text-align: center;
+}
+.sensitivity_rows_container .notfound {
+  color: #bcbcbc;
+  padding: 10px;
+}
+@media screen and (max-width: 768px){
+  .sensitivity_wrapper > .sensitivity_cards_container{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .sensitivity_wrapper > .sensitivity_cards_container > .sensitivity_camera_sensitivity,
+.sensitivity_wrapper > .sensitivity_cards_container > .sensitivity_camera,
+  .sensitivity_wrapper > .sensitivity_cards_container > .sensitivity_ads_sensitivity{
+    width: 100%;
+  }
+  .sensitivity_wrapper{
+    padding: 20px;
+  }
+}
