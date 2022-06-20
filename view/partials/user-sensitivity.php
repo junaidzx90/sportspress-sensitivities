@@ -62,7 +62,7 @@ if(isset($_POST['save_user_sc_fields'])){
                             <p class="field_desc"><?php echo $field ?></p>
                             <div class="sc_range">
                                 <output><?php echo $value1 ?>%</output>
-                                <input class="sc_slider" name="sc_fields[1][<?php echo $key ?>]" type="range" value="<?php echo $value1 ?>"/>
+                                <input class="sc_slider" max="300" name="sc_fields[1][<?php echo $key ?>]" type="range" value="<?php echo $value1 ?>"/>
                             </div>
                         </div>
                         <?php
@@ -91,7 +91,7 @@ if(isset($_POST['save_user_sc_fields'])){
                             <p class="field_desc"><?php echo $field ?></p>
                             <div class="sc_range">
                                 <output><?php echo $value2 ?>%</output>
-                                <input class="sc_slider" name="sc_fields[2][<?php echo $key ?>]" type="range" value="<?php echo $value2 ?>"/>
+                                <input class="sc_slider" max="300" name="sc_fields[2][<?php echo $key ?>]" type="range" value="<?php echo $value2 ?>"/>
                             </div>
                         </div>
                         <?php
@@ -120,7 +120,7 @@ if(isset($_POST['save_user_sc_fields'])){
                             <p class="field_desc"><?php echo $field ?></p>
                             <div class="sc_range">
                                 <output><?php echo $value3 ?>%</output>
-                                <input class="sc_slider" name="sc_fields[3][<?php echo $key ?>]" type="range" value="<?php echo $value3 ?>"/>
+                                <input class="sc_slider" max="300" name="sc_fields[3][<?php echo $key ?>]" type="range" value="<?php echo $value3 ?>"/>
                             </div>
                         </div>
                         <?php
